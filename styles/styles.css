@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: 400;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+    /* Definindo "variaveis" de cor para o nosso projeto*/
+:root {
+    --purple-200: #9a7bd1;
+    --purple-500: #6b36c8;
+    --purple-800: #441f88;
+
+    --black-800: #171717;
+
+    --gray-200: #cccccc;
+    --gray-400: #505861;
+
+    --white: #F9F9F9;
+}
+
+html{
+    height: 100vh;
+    scroll-behavior: smooth; /*desce suavemente a tela e preciso colocar # nas paginas de navegação*/
+
+}
+
+body{
+    background: var(--black-800);
+    color: var(--gray-200);
+}
+
+body::-webkit-scrollbar {
+    /* largura da Scrollbar */
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    /* cor do plano de fundo da Scrollbar */
+    background: var(--black-800);
+}
+
+body::-webkit-scrollbar-thumb {
+    /* cor do scroll */
+    background-color: var(--purple-500);
+
+    /* borda do scroll */
+    border-radius: 20px;
+}
+
+button, a{
+    cursor: pointer;
+}
+
+/* Classe Padrão para todos os Botões */
+.btn {
+    text-align: center;
+    padding: 12px 32px;
+    background: none;
+    border: 1px solid var(--purple-500);
+    color: var(--white);
+    border-radius: 10px;
+    font-weight: 700;
+}
+.btn:hover{
+    background: var(--purple-500);
+}
+.flex{
+    display: flex;
+    justify-content: center; /* se mexa para frente ou pra tras eixo horizontal*/
+    align-items: center; /* permite de mexer de cima pra baixo eixo vertical*/
+}
+
+.flex-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menu_container {
+    height: 80px;
+    position: sticky; /* deixe nosso menu fixo*/
+    top: 0;
+    width: 100%;
+    background-color: var(--black-800);
+    border-bottom: 1px solid var(--purple-500);
+    filter: opacity(0.9);
+}
+
+.menu_container a {
+    font-size: 16px;
+    color: var(--purple-200);
+    font-weight: bold;
+}
+.menu_container a:hover {
+    color: var(--purple-500);
+}
+.menu_content {
+    max-width: 1120px;
+    padding: 0 24px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.menu_lista {
+    list-style: none;
+    text-align: center;
+}
+.menu_lista li {
+    margin: 0 0 0 16px;
+}

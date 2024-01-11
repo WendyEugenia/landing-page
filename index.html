@@ -1,39 +1,47 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Damion&family=Poppins&display=swap" rel="stylesheet">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
-</head>
-<body>
-    <header>
-        <div>
-            <a href="#">Landing Page </a>
+    <link rel="stylesheet" href="./styles/styles.css">
 
+
+</head>
+
+<body>
+    <header class="menu_container flex " >
+        <div class="menu_content ">
+            <a href="#">Landing Page </a>
             <nav>
-                <ul>
+                <ul class="menu_lista flex">
                     <li><a href="#"> Home</a></li>
-                    <li><a href="#"> Sobre</a></li>
-                    <li><a href="#"> Contate Me</a></li>
+                    <li><a href="#sobre"> Sobre</a></li>
+                    <li><a href="#contato"> Contate Me</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <main>
-        <section>
+    <main class="">
+        <section id="sobre">
             <article>
                 <h4>Bem Vindo!</h4>
                 <h1>Diferentes mundos para diferentes pessoal</h1>
-                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nisi sint omnis explicabo blanditiis modi praesentium saepe dolorem alias, minima obcaecati officiis? Similique culpa, maiores sapiente numquam necessitatibus magnam nam.</p>
-
-                <a href="https://github.com/WendyEugenia" target="_blank">Explore</a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nisi sint omnis explicabo</p>
+                
+                <a class="btn" href="https://github.com/WendyEugenia" target="_blank">Explore</a>
             </article>
 
             <article>
-                <img src="./assets/astronauta.svg" alt="Capacete de Austrounauta  Animado"/>
+                <img src="./assets/astronauta.svg" alt="Capacete de Austrounauta  Animado" />
             </article>
-        
+
 
             <section>
                 <img src="https://avatars.githubusercontent.com/u/85081699?v=4" alt="Foto do perfil do Github - Wendy">
@@ -41,21 +49,25 @@
 
             <article>
                 <h2>Quem sou eu?</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere architecto saepe ex, quas officia inventore odit itaque, quod possimus vel vitae natus ipsam a quam tempora. Veritatis praesentium at repellendus.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere architecto saepe ex, quas officia
+                    inventore odit itaque, quod possimus vel vitae natus ipsam a quam tempora. Veritatis praesentium at
+                    repellendus.</p>
             </article>
 
             <article>
-                <a href="https://github.com/WendyEugenia" target="_blank">GitHub</a>
+                <a class="btn" href="https://github.com/WendyEugenia" target="_blank">GitHub</a>
 
                 <p>10 Seguidores</p>
                 <p>58 repositorios</p>
             </article>
 
-         </section>
-        <section>
+        </section>
+        <section id="contato" >
             <article>
                 <h4>Me Contate</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia soluta magnam quae totam error, laudantium perferendis eius laboriosam dolor minus, eaque sit nobis sed ullam? Aliquam, reprehenderit quaerat? Quam, ipsum.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia soluta magnam quae totam error,
+                    laudantium perferendis eius laboriosam dolor minus, eaque sit nobis sed ullam? Aliquam,
+                    reprehenderit quaerat? Quam, ipsum.</p>
 
                 <div>
                     <a href="" target="_blank">
@@ -72,28 +84,29 @@
                 </div>
             </article>
 
-            <form action="">
+            <form action="" class="flex-column" >
                 <label for="">Nome:</label>
-                <input type="text" name="nome" placeholder="Digite seu nome" required/>
+                <input type="text" name="nome" placeholder="Digite seu nome" required />
 
                 <label for="">Email:</label>
-                <input type="email" name="email" placeholder="Digite seu email" required/>
+                <input type="email" name="email" placeholder="Digite seu email" required />
 
                 <label for="">Assunto:</label>
-                <input type="text" name="assunto" placeholder="Digite o assunto" required/>
+                <input type="text" name="assunto" placeholder="Digite o assunto" required />
 
                 <label for="">Mensagem</label>
                 <textarea name="" id="" placeholder="Digite sua mensagem" cols="30" rows="10"></textarea>
-                <button>Enviar</button>
-              
+                <button class="btn">Enviar</button>
             </form>
 
         </section>
 
-    </main>    
+    </main>
+
     
     <footer>
-            Projeto feito com 😈 por Wendy Eugenia - 2024
+        Projeto feito com 😈 por Wendy Eugenia - 2024
     </footer>
 </body>
+
 </html>
