@@ -10,101 +10,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
     <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="shortcut icon" type="imagex/png" href="./img/icone.png">
 
 
 </head>
 
 <body>
-    <header class="menu_container flex " >
-        <div class="menu_content ">
-            <a href="#">Landing Page </a>
+    <header id="menu" class="menu_container flex">  
+        <div class="menu_content">                 
+            <a href="#">Landing Page</a>
+
             <nav>
-                <ul class="menu_lista flex">
-                    <li><a href="#"> Home</a></li>
-                    <li><a href="#sobre"> Sobre</a></li>
-                    <li><a href="#contato"> Contate Me</a></li>
+                <ul class="menu_lista flex"> 
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#contato">Contate Me</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main class="">
-        <section id="sobre">
-            <article>
-                <h4>Bem Vindo!</h4>
-                <h1>Diferentes mundos para diferentes pessoal</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nisi sint omnis explicabo</p>
-                
-                <a class="btn" href="https://github.com/WendyEugenia" target="_blank">Explore</a>
+        <section id="home" class="home_container">  <!-- Adicione aqui as CLASSES -->
+            <article id="home-texto" class="home_content">  <!-- Adicione aqui as CLASSES -->
+                <h4>Bem Vindo a um Novo Universo</h4>
+                <h1>Diferente mundos para diferentes pessoas</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod error veniam in voluptatem magni
+                    quisquam</p>
+
+                <a class="btn" target="_blank" href="https://github.com/WendyEugenia">    <!-- Adicione aqui as CLASSES -->
+                    Explore
+                </a>
             </article>
 
-            <article>
-                <img src="./assets/astronauta.svg" alt="Capacete de Austrounauta  Animado" />
+            <article id="home-imagem" class="home_content"> <!-- Adicione aqui as CLASSES -->
+                <img class="home_content_img" src="./assets/astronauta.svg" alt="Capacete de Astronauta Animado">   <!-- Adicione aqui as CLASSES -->
             </article>
+        </section>
 
+        <section id="sobre" class="sobre_container">    <!-- Adicione aqui as CLASSES -->
+            <img src="https://avatars.githubusercontent.com/u/85081699?v=4"
+                alt="Foto do Perfil do Github - Wendy Eugenia">
 
-            <section>
-                <img src="https://avatars.githubusercontent.com/u/85081699?v=4" alt="Foto do perfil do Github - Wendy">
-            </section>
+            <article id="sobre-texto">  <!-- Adicione aqui as CLASSES -->
+                <h1>Quem sou eu?</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam odit voluptates incidunt
+                    inventore rem error harum blanditiis accusamus vitae, minus fugit consequatur? Dolorum maiores magni
+                    deleniti modi sit laudantium totam!
+                </p>
 
-            <article>
-                <h2>Quem sou eu?</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere architecto saepe ex, quas officia
-                    inventore odit itaque, quod possimus vel vitae natus ipsam a quam tempora. Veritatis praesentium at
-                    repellendus.</p>
+                <div id="sobre-github" class="sobre_github flex">   <!-- Adicione aqui as CLASSES -->
+                    <a class="btn" href="https://github.com/WendyEugenia">Github</a>
+                    <p>10 Seguidores</p>
+                    <p>10 Repositórios</p>
+                </div>
+
             </article>
+        </section>
 
-            <article>
-                <a class="btn" href="https://github.com/WendyEugenia" target="_blank">GitHub</a>
-
-                <p>10 Seguidores</p>
-                <p>58 repositorios</p>
-            </article>
 
         </section>
-        <section id="contato" >
-            <article>
+        <section id="contato" class="contato_container">    <!-- Adicione aqui as CLASSES -->
+            <article id="contato-texto" class="contato_content">    <!-- Adicione aqui as CLASSES -->
                 <h4>Me Contate</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia soluta magnam quae totam error,
-                    laudantium perferendis eius laboriosam dolor minus, eaque sit nobis sed ullam? Aliquam,
-                    reprehenderit quaerat? Quam, ipsum.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi similique esse fuga necessitatibus,
+                    iusto alias eius perferendis qui iste minima blanditiis repellendus distinctio dolor obcaecati
+                    aliquid quod quidem incidunt quibusdam!</p>
 
-                <div>
-                    <a href="" target="_blank">
-                        <img src="./assets/linkedin.svg" alt="Logo do Linkedin">
+                <div id="redes-sociais" class="social_container flex">  <!-- Adicione aqui as CLASSES -->
+                    <a href="">
+                        <img class="social_icon" src="https://img.icons8.com/ios/500/linkedin.png"
+                            alt="Logo do LinkedIn" />   <!-- Adicione aqui as CLASSES -->
                     </a>
-
-                    <a href="" target="_blank">
-                        <img src="./assets/github.svg" alt="Logo do Github">
+                    <a href="">
+                        <img class="social_icon" src="https://img.icons8.com/ios/500/github--v1.png"
+                            alt="Logo do Github" /> <!-- Adicione aqui as CLASSES -->
                     </a>
-
-                    <a href="" target="_blank">
-                        <img src="/assets/instagram.svg" alt="Logo do Instagram">
+                    <a href="">
+                        <img class="social_icon" src="https://img.icons8.com/ios/500/instagram-new--v1.png"
+                            alt="Logo do Instagram" />  <!-- Adicione aqui as CLASSES -->
                     </a>
                 </div>
             </article>
 
-            <form action="" class="flex-column" >
-                <label for="">Nome:</label>
-                <input type="text" name="nome" placeholder="Digite seu nome" required />
+            <form action="" method="POST">
+                <label for="nome">Nome: </label>
+                <input id="nome" type="text" name="name" placeholder="Digite seu nome" required>
 
-                <label for="">Email:</label>
-                <input type="email" name="email" placeholder="Digite seu email" required />
+                <label for="email">Email: </label>
+                <input id="email" type="email" name="email" placeholder="Digite seu email" required>
 
-                <label for="">Assunto:</label>
-                <input type="text" name="assunto" placeholder="Digite o assunto" required />
+                <label for="subject">Assunto: </label>
+                <input id="subject" type="text" name="subject" placeholder="Digite o título da mensagem" required>
 
-                <label for="">Mensagem</label>
-                <textarea name="" id="" placeholder="Digite sua mensagem" cols="30" rows="10"></textarea>
-                <button class="btn">Enviar</button>
+                <label for="message">Mensagem: </label>
+                <textarea id="message" name="message" placeholder="Digite sua mensagem" required></textarea>
+
+                <button class="btn" type="submit">Enviar</button>
             </form>
-
         </section>
 
     </main>
-
-    
-    <footer>
+    <footer class="flex">
         Projeto feito com 😈 por Wendy Eugenia - 2024
     </footer>
 </body>
